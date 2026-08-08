@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18 JavaScript</title>
+
+    <style>
+      
+      #ex3-div {
+        width: 200px;
+        height: 100px;
+        border: 2px solid black;
+      }
+
+    </style>
+</head>
+<body>
+    <h2>Entendendo eventos no JavaScript</h2>
+
+    <h3>Exemplo de evento com atributo em um elemento:</h3>
+
+    <button onclick="this.innerHTML = Date();">Data atual</button>
+
+    <hr>
+
+    <h3>Exemplo de evento sendo executado com Ouvinte de Eeventos (Event Listener):</h3>
+    
+    <button id="ex2-btn">Cliqye aqui</button> <p id="ex2-p"></p>
+    
+
+   <hr>
+
+   <h3>Exemplos de eventos mouseover e mouseout</h3>
+    <div id="ex3-div">
+     <p id="ex3-p">Passe o mouse sobre a caixa.</p>
+    </div>
+   
+    <hr>
+
+    <h3>Exemplos de evento mousemove exibindo posição do mouse na página:</h3>
+   <p id="ex4-p"></p>
+
+   <hr>
+   <h3>Exemplo de evento keydown exibindo alguma tecla pressionada pelo usuario</h3>
+
+   <input id="ex5-campo"  type="text" placeholder="Aperte alguma tecla">
+
+   <p id="ex5-p"></p>
+
+   <hr>
+
+   <h3>Exemplo de remoção de evento em elemento remveEventListener():</h3>
+
+   <button id="adicionar">Adicionar evento</button>
+   <button id="remover">Remover evento</button>
+   <button id="testar">Testar evento</button>
+   
+   <p id="ex6-p"></p>
+   <hr>
+
+   <h3>Exemplo de bloqueio em eventos utilizando o preventDefault()</h3>
+   
+   
+   <a href="https://www.w3schools.com" id="ex7-link">Ir para o WSSchools</a>
+   
+   <p id="ex7-p"></p>
+   
+   <script src="./src/script.js"></script> 
+</body>
+</html>
